@@ -42,7 +42,7 @@ docker compose up --build
 
 ```bash
 curl -X POST http://127.0.0.1:8000/api/v1/orders/create-order \
-  -H "Content-Type: application/json" \
+  -H "Content-Type: application/x-www-form-urlencoded" \
   -d '{
     "site": "your_site_code",
     "number": "TEST-ORDER-001",
@@ -73,7 +73,7 @@ curl -X POST http://127.0.0.1:8000/api/v1/orders/create-order \
 
 ```bash
 curl -X POST http://127.0.0.1:8000/api/v1/orders/create-order-payments \
-  -H "Content-Type: application/json" \
+  -H "Content-Type: application/x-www-form-urlencoded" \
   -d '{
     "site": "your_site_code",
     "payment": {
